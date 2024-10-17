@@ -1,101 +1,103 @@
-import Image from "next/image";
+'use client'
+
+import Image from 'next/image'
+import Link from 'next/link'
+import { Github, Linkedin, MessageSquare } from 'lucide-react'
+import { useRef } from 'react'
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const projectsRef = useRef<HTMLElement>(null)
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+  const scrollToProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    projectsRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  return (
+      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-gray-900 to-black text-white">
+        <header className="p-8">
+          <nav className="flex justify-between items-center max-w-6xl mx-auto text-2xl">
+            <div className="flex items-center space-x-4">
+              <div className="w-8 h-8 bg-purple-600 rounded-sm"></div>
+              <span className="font-semibold text-4xl">My portfolio</span>
+            </div>
+            <div className="flex items-center space-x-8">
+              <Link href="/" className="hover:text-purple-400 px-4 py-2 rounded-md">Home</Link>
+              <a href="#projects" onClick={scrollToProjects} className="hover:text-purple-400 px-4 py-2 rounded-md">Projets</a>
+              <Link href="/a-propos" className="hover:text-purple-400 px-4 py-2 rounded-md">À propos</Link>
+              <a href="https://github.com/adel-djd" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
+                <Github className="w-8 h-8" />
+              </a>
+              <a href="https://fr.linkedin.com/in/adel-djedid-8aaa102a1" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
+                <Linkedin className="w-8 h-8" />
+              </a>
+            </div>
+          </nav>
+        </header>
+
+        <main className="max-w-6xl mx-auto px-8 py-24">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="md:w-2/3">
+              <h1 className="text-7xl font-bold mb-6">Djedid Adel</h1>
+              <p className="text-3xl mb-10">
+                Je m&apos;appelle Adel Djedid, j&apos;ai 20 ans et je suis
+                étudiant en deuxième année de BUT Informatique à l&apos;IUT de Lens.
+              </p>
+            </div>
+            <div className="md:w-1/3 flex justify-center md:justify-end">
+              <Image
+                  src="/images/portrait.jpg"
+                  alt="Profile"
+                  width={250}
+                  height={250}
+                  className="rounded-full"
+              />
+            </div>
+          </div>
+
+          <section id="projects" ref={projectsRef} className="mt-32">
+            <div className="flex justify-between items-center mb-10">
+              <h2 className="text-5xl font-semibold">Mes derniers projets</h2>
+              <button className="px-6 py-3 border border-purple-400 text-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-colors">
+                Tous les projets →
+              </button>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { name: 'Ray Tracing', link: '/ray-tracing', image: '/images/projects/ray_tracing.png' },
+                { name: 'Flatcraft', link: '/flatcraft', image: '/images/projects/flatcraft.jpg' },
+                { name: 'Pokedex', link: '/pokedex', image: '/images/projects/pokedex.jpg' }
+              ].map((project, index) => (
+                  <Link href={project.link} key={index} className="block">
+                    <div className="bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                      <Image
+                          src={project.image}
+                          alt={project.name}
+                          width={350}
+                          height={250}
+                          className="w-full h-56 object-cover"
+                      />
+                      <div className="p-6">
+                        <h3 className="text-2xl font-semibold mb-4">{project.name}</h3>
+                      </div>
+                    </div>
+                  </Link>
+              ))}
+            </div>
+          </section>
+
+          <section className="mt-32 flex justify-between items-center">
+            <h2 className="text-4xl font-semibold">Intéressé par mon profil ?</h2>
+            <button className="flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-md transition-colors">
+              <MessageSquare className="w-6 h-6 mr-3" />
+              Envoyez-moi un message
+            </button>
+          </section>
+        </main>
+
+        <footer className="mt-32 py-8 text-center text-gray-400">
+          <p>© 2024 Adel Djedid</p>
+        </footer>
+      </div>
+  )
 }
