@@ -11,7 +11,7 @@ export default function FlatcraftPage() {
                 <h1 className="text-4xl font-bold mb-4">Flatcraft</h1>
                 <div className="mb-8">
                     <Image
-                        src="./images/projects/flatcraft.jpg"
+                        src="./images/projects/flatcraft.jpeg"
                         alt="Iridescent ripples of a bright blue and pink liquid"
                         width={800}
                         height={400}

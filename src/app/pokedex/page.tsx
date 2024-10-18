@@ -11,7 +11,7 @@ export default function PokedexPage() {
                 <h1 className="text-4xl font-bold mb-4">Pokedex</h1>
                 <div className="mb-8">
                     <Image
-                        src="./images/projects/pokedex.jpg"
+                        src="./images/projects/pokedex.jpeg"
                         alt="Pokedex Pokemon"
                         width={800}
                         height={400}

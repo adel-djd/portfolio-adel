@@ -13,7 +13,7 @@ export default function AboutPage() {
                 <div className="mb-12">
                     <div className="w-full mb-8">
                         <Image
-                            src="./images/bureau_ordi.jpg"
+                            src="./images/bureau_ordi.jpeg"
                             alt="Adel Djedid au travail"
                             width={800}
                             height={400}
