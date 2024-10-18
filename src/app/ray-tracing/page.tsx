@@ -35,7 +35,7 @@ export default function RayTracingPage() {
                         Les composants clés du projet comprennent :
                     </p>
                     <ul className="list-disc list-inside mb-4">
-                        <li>Des modèles d&apos;;éclairage variés</li>
+                        <li>Des modèles d&apos;éclairage variés</li>
                         <li>Des objets de scène tels que sphères, plans et triangles</li>
                         <li>Une caméra pour définir la vue de la scène</li>
                         <li>Des rayons lancés depuis la caméra à travers chaque pixel de l&apos;image</li>
