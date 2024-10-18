@@ -6,7 +6,7 @@ export default function AboutPage() {
         <div className="min-h-screen bg-gradient-to-br from-purple-900 via-gray-900 to-black text-white">
             <main className="max-w-4xl mx-auto px-4 py-12">
                 <Link href="/" className="text-purple-400 hover:underline mb-8 inline-block">
-                    ← Retour à l&aposaccueil
+                    ← Retour à l&apos;accueil
                 </Link>
                 <h1 className="text-4xl font-bold mb-8">À Propos de Moi</h1>
 
@@ -24,12 +24,12 @@ export default function AboutPage() {
                     <div>
                         <h2 className="text-2xl font-semibold mb-4">Parcours Académique</h2>
                         <p className="mb-4">
-                            Actuellement en deuxième année de BUT informatique à l&aposIUT de Lens, j&aposai acquis des
+                            Actuellement en deuxième année de BUT informatique à l&apos;IUT de Lens, j&apos;ai acquis des
                             compétences solides en programmation, avec une maîtrise des langages tels que Python, Java,
-                            et JavaScript. Mon parcours académique m&aposa également permis de développer des connaissances
+                            et JavaScript. Mon parcours académique m&apos;a également permis de développer des connaissances
                             approfondies en développement web (HTML, CSS, PHP), en gestion de bases de données
-                            relationnelles (SQL, MySQL, PostgreSQL), ainsi qu&aposen routage réseau avec une expertise dans
-                            l&aposattribution d&aposadresses IPv4 et IPv6.
+                            relationnelles (SQL, MySQL, PostgreSQL), ainsi qu&apos;en routage réseau avec une expertise dans
+                            l&apos;attribution d&apos;adresses IPv4 et IPv6.
                         </p>
                     </div>
                 </div>
@@ -37,9 +37,9 @@ export default function AboutPage() {
                 <div className="bg-gray-800 rounded-lg p-6 mb-12">
                     <h2 className="text-2xl font-semibold mb-4">Compétences</h2>
                     <p className="mb-4">
-                        Doté d&aposune excellente capacité d&aposécoute, d&aposune gestion rigoureuse du temps, et d&aposune volonté
-                        d&aposapprentissage continu, je suis convaincu que ces atouts me permettront de m&aposintégrer
-                        efficacement au sein de votre équipe. Ma compréhension des principaux systèmes d&aposexploitation
+                        Doté d&apos;une excellente capacité d&apos;écoute, d&apos;une gestion rigoureuse du temps, et d&apos;une volonté
+                        d&apos;apprentissage continu, je suis convaincu que ces atouts me permettront de m&apos;intégrer
+                        efficacement au sein de votre équipe. Ma compréhension des principaux systèmes d&apos;exploitation
                         (Windows, Linux) et ma maîtrise avancée de Git, acquise à travers des projets en groupe,
                         attestent de ma polyvalence et de ma capacité à collaborer efficacement.
                     </p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                         <li>Développement web : HTML, CSS, PHP</li>
                         <li>Bases de données : SQL, MySQL, PostgreSQL</li>
                         <li>Réseaux : Routage, IPv4, IPv6</li>
-                        <li>Systèmes d&aposexploitation : Windows, Linux</li>
+                        <li>Systèmes d&apos;exploitation : Windows, Linux</li>
                         <li>Gestion de version : Git</li>
                     </ul>
                 </div>

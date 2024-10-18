@@ -40,8 +40,8 @@ export default function Home() {
             <div className="md:w-2/3">
               <h1 className="text-7xl font-bold mb-6">Djedid Adel</h1>
               <p className="text-3xl mb-10">
-                Je m&aposappelle Adel Djedid, j&aposai 20 ans et je suis
-                étudiant en deuxième année de BUT Informatique à l&aposIUT de Lens.
+                Je m&apos;appelle Adel Djedid, j&apos;ai 20 ans et je suis
+                étudiant en deuxième année de BUT Informatique à l&apos;IUT de Lens.
               </p>
             </div>
             <div className="md:w-1/3 flex justify-center md:justify-end">
