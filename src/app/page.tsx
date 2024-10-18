@@ -40,8 +40,8 @@ export default function Home() {
             <div className="md:w-2/3">
               <h1 className="text-7xl font-bold mb-6">Djedid Adel</h1>
               <p className="text-3xl mb-10">
-                Je m&apos;appelle Adel Djedid, j&apos;ai 20 ans et je suis
-                étudiant en deuxième année de BUT Informatique à l&apos;IUT de Lens.
+                Je m&aposappelle Adel Djedid, j&aposai 20 ans et je suis
+                étudiant en deuxième année de BUT Informatique à l&aposIUT de Lens.
               </p>
             </div>
             <div className="md:w-1/3 flex justify-center md:justify-end">
@@ -88,10 +88,13 @@ export default function Home() {
 
           <section className="mt-32 flex justify-between items-center">
             <h2 className="text-4xl font-semibold">Intéressé par mon profil ?</h2>
-            <button className="flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-md transition-colors">
+            <a
+                href="mailto:adel.djedid.pro@gmail.com"
+                className="flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-md transition-colors text-white"
+            >
               <MessageSquare className="w-6 h-6 mr-3" />
               Envoyez-moi un message
-            </button>
+            </a>
           </section>
         </main>
 
