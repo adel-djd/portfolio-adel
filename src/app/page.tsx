@@ -1,9 +1,16 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Github, Linkedin, MessageSquare } from 'lucide-react'
 import { useRef } from 'react'
+
+// Dynamically import non-critical components
+const NonCriticalComponent = dynamic(() => import('../components/NonCriticalComponent'), {
+  loading: () => <p>Loading...</p>,
+  ssr: false
+})
 
 export default function Home() {
   const projectsRef = useRef<HTMLElement>(null)
@@ -51,6 +58,7 @@ export default function Home() {
                   width={250}
                   height={250}
                   className="rounded-full"
+                  loading="lazy"
               />
             </div>
           </div>
@@ -76,6 +84,7 @@ export default function Home() {
                           width={350}
                           height={250}
                           className="w-full h-56 object-cover"
+                          loading="lazy"
                       />
                       <div className="p-6">
                         <h3 className="text-2xl font-semibold mb-4">{project.name}</h3>
