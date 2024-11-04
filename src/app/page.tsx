@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 flex justify-center md:justify-end">
               <Image
-                  src="./images/portrait.jpeg"
+                  src="./images/portrait.webp"
                   alt="Profile"
                   width={250}
                   height={250}
@@ -62,9 +62,9 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { name: 'Ray Tracing', link: '/ray-tracing', image: './images/projects/ray_tracing.jpeg' },
-                { name: 'Flatcraft', link: '/flatcraft', image: './images/projects/flatcraft.jpeg' },
-                { name: 'Pokedex', link: '/pokedex', image: './images/projects/pokedex.jpeg' }
+                { name: 'Ray Tracing', link: '/ray-tracing', image: './images/projects/ray_tracing.webp' },
+                { name: 'Flatcraft', link: '/flatcraft', image: './images/projects/flatcraft.webp' },
+                { name: 'Pokedex', link: '/pokedex', image: './images/projects/pokedex.webp' }
               ].map((project, index) => (
                   <Link href={project.link} key={index} className="block">
                     <div className="bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
