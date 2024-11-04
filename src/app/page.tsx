@@ -59,9 +59,6 @@ export default function Home() {
           <section id="projects" ref={projectsRef} className="mt-32">
             <div className="flex justify-between items-center mb-10">
               <h2 className="text-5xl font-semibold">Mes derniers projets</h2>
-              <button className="px-6 py-3 border border-purple-400 text-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-colors">
-                Tous les projets →
-              </button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
