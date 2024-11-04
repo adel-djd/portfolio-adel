@@ -6,12 +6,6 @@ import Link from 'next/link'
 import { Github, Linkedin, MessageSquare } from 'lucide-react'
 import { useRef } from 'react'
 
-// Dynamically import non-critical components
-const NonCriticalComponent = dynamic(() => import('../components/NonCriticalComponent'), {
-  loading: () => <p>Loading...</p>,
-  ssr: false
-})
-
 export default function Home() {
   const projectsRef = useRef<HTMLElement>(null)
 
