@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function RayTracingPage() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-900 via-gray-900 to-black text-white">
+        <div className="min-h-screen bg-black text-white">
             <main className="max-w-4xl mx-auto px-4 py-12">
                 <Link href="/" className="text-purple-400 hover:underline mb-8 inline-block">
                     ← Retour à l&apos;accueil

@@ -14,7 +14,7 @@ export default function Home() {
   }
 
   return (
-      <div className="min-h-screen bg-gradient-to-bl from-purple-900 via-gray-900 to-black text-white">
+      <div className="min-h-screen bg-black text-white">
         <header className="p-8">
           <nav className="flex justify-between items-center max-w-6xl mx-auto text-2xl">
             <div className="flex items-center space-x-4">

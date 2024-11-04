@@ -21,12 +21,5 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-body);
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background: #000000;  font-family: var(--font-body);
 }
