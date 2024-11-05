@@ -11,7 +11,7 @@ export default function RayTracingPage() {
                 <h1 className="text-4xl font-bold mb-4">Ray Tracing</h1>
                 <div className="mb-8">
                     <Image
-                        src="./images/projects/ray_tracing.webp"
+                        src="/images/projects/ray_tracing.webp"
                         alt="Ray Tracing"
                         width={800}
                         height={400}
