@@ -6,8 +6,7 @@ import { Github, Linkedin, MessageSquare } from 'lucide-react'
 import { useRef } from 'react'
 
 export default function Home() {
-  const projectsRef = useRef<HTMLElement>(null)
-
+  const projectsRef = useRef<HTMLElement | null>(null)
   return (
       <div className="min-h-screen bg-black text-white">
         <header className="p-8">
