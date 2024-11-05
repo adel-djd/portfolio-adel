@@ -8,11 +8,6 @@ import { useRef } from 'react'
 export default function Home() {
   const projectsRef = useRef<HTMLElement>(null)
 
-  const scrollToProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
-    projectsRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
       <div className="min-h-screen bg-black text-white">
         <header className="p-8">
@@ -23,7 +18,6 @@ export default function Home() {
             </div>
             <div className="flex items-center space-x-8">
               <Link href="/" className="hover:text-purple-400 px-4 py-2 rounded-md">Home</Link>
-              <a href="#projects" onClick={scrollToProjects} className="hover:text-purple-400 px-4 py-2 rounded-md">Projets</a>
               <Link href="/a-propos" className="hover:text-purple-400 px-4 py-2 rounded-md">À propos</Link>
               <a href="https://github.com/adel-djd" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
                 <Github className="w-8 h-8" />
