@@ -6,7 +6,7 @@ import { Github, Linkedin, MessageSquare } from 'lucide-react'
 import { useRef } from 'react'
 
 export default function Home() {
-  const projectsRef = useRef<HTMLElement | null>(null)
+const projectsRef = useRef<HTMLElement | null>(null)
   return (
       <div className="min-h-screen bg-black text-white">
         <header className="p-8">
@@ -37,22 +37,36 @@ export default function Home() {
                 étudiant en deuxième année de BUT Informatique à l&apos;IUT de Lens.
               </p>
             </div>
+            <div className="md:w-1/3 flex justify-center md:justify-end">
+              <Image
+                  src="./images/portrait.webp"
+                  alt="Profile"
+                  width={250}
+                  height={250}
+                  className="rounded-full"
+                  loading="lazy"
+              />
+            </div>
           </div>
 
           <section id="projects" ref={projectsRef} className="mt-32">
             <div className="flex justify-between items-center mb-10">
               <h2 className="text-5xl font-semibold">Mes derniers projets</h2>
+                <button
+                    className="px-6 py-3 border border-purple-400 text-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-colors">
+                  Tous les projets →
+                </button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { name: 'Ray Tracing', link: '/ray-tracing', image: './images/projects/ray_tracing.webp' },
+                {name: 'Ray Tracing', link: '/ray-tracing', image: './images/projects/ray_tracing.webp'},
                 { name: 'Flatcraft', link: '/flatcraft', image: './images/projects/flatcraft.webp' },
                 { name: 'Pokedex', link: '/pokedex', image: './images/projects/pokedex.webp' }
               ].map((project, index) => (
                   <Link href={project.link} key={index} className="block">
-                    <div className="bg-gray-800 rounded-lg overflow-hidden">
+                    <div className="bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                       <Image
-                        src={project.image}
+                          src={project.image}
                           alt={project.name}
                           width={350}
                           height={250}
