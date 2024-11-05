@@ -37,16 +37,6 @@ export default function Home() {
                 étudiant en deuxième année de BUT Informatique à l&apos;IUT de Lens.
               </p>
             </div>
-            <div className="md:w-1/3 flex justify-center md:justify-end">
-              <Image
-                  src="./images/portrait.webp"
-                  alt="Profile"
-                  width={250}
-                  height={250}
-                  className="rounded-full"
-                  loading="lazy"
-              />
-            </div>
           </div>
 
           <section id="projects" ref={projectsRef} className="mt-32">
