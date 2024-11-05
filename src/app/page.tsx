@@ -45,7 +45,6 @@ export default function Home() {
                   height={250}
                   className="rounded-full"
                   loading="lazy"
-                  quality={75}
               />
             </div>
           </div>
