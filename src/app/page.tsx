@@ -50,9 +50,9 @@ export default function Home() {
                 { name: 'Pokedex', link: '/pokedex', image: './images/projects/pokedex.webp' }
               ].map((project, index) => (
                   <Link href={project.link} key={index} className="block">
-                    <div className="bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="bg-gray-800 rounded-lg overflow-hidden">
                       <Image
-                          src={project.image}
+                        src={project.image}
                           alt={project.name}
                           width={350}
                           height={250}
